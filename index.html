@@ -39,6 +39,16 @@
       scroll-behavior: smooth;
     }
 
+    .container {
+      display:inline-block;
+    }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
     /* Header / Nav */
     header {
       position: sticky;
@@ -392,7 +402,7 @@
 </head>
 
 <body>
-
+<div class="container">
   <!-- Header -->
   <header>
     <div class="nav-inner">
@@ -654,6 +664,8 @@
       });
     });
   </script>
+  </div>
 </body>
+
 
 </html>
